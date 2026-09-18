@@ -19,7 +19,7 @@ import './index.css'
 // swap reintroduces, and is already in place.
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/flowprobe-screenshot-app">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
